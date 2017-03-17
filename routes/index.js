@@ -21,7 +21,8 @@ router.get('/secret*', function (req, res) {
 
   // Do methods here
 
-  res.json({ user: 'if youre seeing this kev, this may be the end...' });
+  res.json({ user: 'if youre seeing this kev, this may be the end...' ,
+              server: 'staging'});
   res.end('Password: ' + key);
 
 });
